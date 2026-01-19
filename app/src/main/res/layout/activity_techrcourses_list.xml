@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <FrameLayout
+        android:id="@+id/upperBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/uni_green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helveti_arabic"
+            android:text="قوائم حضور الطلاب"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/upperBar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/listbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="قائمة"
+                android:fontFamily="@font/helveti_arabic"
+                android:textSize="15sp"
+                ></Button>
+            <Button
+                android:id="@+id/codebtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="QRcode"
+                ></Button>
+            <TextView
+                android:id="@+id/courseTV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:text=" "
+                android:fontFamily="@font/helveti_arabic"
+                android:textSize="18sp"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/listbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="قائمة"
+                android:fontFamily="@font/helveti_arabic"
+                android:textSize="15sp"
+                ></Button>
+            <Button
+                android:id="@+id/codebtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="QRcode"
+                ></Button>
+            <TextView
+                android:id="@+id/courseTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:text=" "
+                android:fontFamily="@font/helveti_arabic"
+                android:textSize="18sp"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:background="@color/white">
+
+            <Button
+                android:id="@+id/listbtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="قائمة"
+                android:fontFamily="@font/helveti_arabic"
+                android:textSize="15sp"
+                ></Button>
+            <Button
+                android:id="@+id/codebtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="QRcode"
+                ></Button>
+            <TextView
+                android:id="@+id/courseTV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:text=" "
+                android:fontFamily="@font/helveti_arabic"
+                android:textSize="18sp"
+                ></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

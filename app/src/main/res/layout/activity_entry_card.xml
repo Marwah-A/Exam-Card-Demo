@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/uni_green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helveti_arabic"
+            android:text="بطاقة دخول الاختبار"
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="بيانات الطالب"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/stdname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الاسم"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/std_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/stdname"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/stdid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stdname"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الرقم الجامعي"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/std_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/std_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/stdid"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/stdstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stdid"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الحالة"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/std_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/std_id"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/stdstatus"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/stdcollege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stdstatus"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الكلية"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/std_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/std_status"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/stdcollege"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/stdmajor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stdcollege"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="التخصص"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/std_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/std_college"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/stdmajor"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/stdlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stdmajor"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="المستوى"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/std_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/std_major"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/stdlevel"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"></TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_margin="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/examinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="بيانات الاختبار"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/coursename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/examinfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="اسم المقرر"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/examinfo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/coursename"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="  "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/sectionid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/coursename"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الشعبة"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/section_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/sectionid"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/examday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sectionid"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="اليوم"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/exam_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/section_id"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/examday"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/examdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/examday"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="التاريخ"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/exam_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/exam_day"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/examdate"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/examtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/examdate"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الوقت"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/exam_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/exam_date"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/examtime"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/examperiod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/examtime"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="الفترة"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/exam_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/exam_time"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/examperiod"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/examhall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/examperiod"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text="القاعة"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/exam_hall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/exam_period"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@id/examhall"
+                    android:fontFamily="@font/helveti_arabic"
+                    android:text=" "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/scanbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:backgroundTint="#7E7D7D"
+        android:text="Scan QR code"
+        android:enabled="false"
+        ></Button>
+</LinearLayout>
