@@ -18,3 +18,5 @@ captures/
 *.log
 
 .DS_Store
+
+app/google-services.json
